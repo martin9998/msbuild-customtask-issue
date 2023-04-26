@@ -1,0 +1,7 @@
+<Project TreatAsLocalProperty="TaskFolder;TaskAssembly">
+  <PropertyGroup>
+    <TaskAssembly>$(MSBuildThisFileDirectory)..\tasks\net6.0\CustomTaskWithDependency.dll</TaskAssembly>
+  </PropertyGroup>
+
+  <UsingTask TaskName="CustomTaskWithDependency.TaskWithDependency" AssemblyFile="$(TaskAssembly)"/>
+</Project>
